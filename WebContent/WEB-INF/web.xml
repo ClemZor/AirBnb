@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>defiwebAirBnb</display-name>
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/templates/index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MaServlet</servlet-name>
+    <servlet-class>com.simplon.servlets.MaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MaServlet</servlet-name>
+    <url-pattern>/accueil</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AjoutProprio</servlet-name>
+    <servlet-class>com.simplon.servlets.AjoutProprio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjoutProprio</servlet-name>
+    <url-pattern>/CreationProprietaire</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AjoutLogement</servlet-name>
+    <servlet-class>com.simplon.servlets.AjoutLogement</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AffichagePageLogement</servlet-name>
+    <servlet-class>com.simplon.servlets.AffichagePageLogement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AffichagePageLogement</servlet-name>
+    <url-pattern>/CreationLogement</url-pattern>
+  </servlet-mapping>
+</web-app>
